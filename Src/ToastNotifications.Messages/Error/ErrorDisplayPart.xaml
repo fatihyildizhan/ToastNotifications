@@ -4,7 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:core="clr-namespace:ToastNotifications.Core;assembly=ToastNotifications"
-             mc:Ignorable="d" d:DesignWidth="250" >
+             mc:Ignorable="d" d:DesignWidth="250">
     <Border x:Name="ContentWrapper" Style="{DynamicResource NotificationBorder}" Background="{DynamicResource ErrorColorBrush}">
         <Grid x:Name="ContentContainer">
             <Grid.ColumnDefinitions>
@@ -12,6 +12,7 @@
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="Auto"  />
             </Grid.ColumnDefinitions>
+            
             <Rectangle x:Name="Icon" Width="24" Height="24">
                 <Rectangle.Fill>
                     <VisualBrush Visual="{StaticResource ErrorIcon}" />
